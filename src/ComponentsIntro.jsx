@@ -64,9 +64,9 @@ const links = [
 ];
 
 const nav = NavMaker({ links });
-document.querySelector('#target').appendChild(nav);
+document.querySelector('#target6').appendChild(nav);
 // DESIRED RESULT IN THE DOM for exercise 3:
-// <div id="target">
+// <div id="target6">
 //   <nav>
 //     <a href="https://google.com">Google</a>
 //     <a href="https://wikipedia.org">Wikipedia</a>
