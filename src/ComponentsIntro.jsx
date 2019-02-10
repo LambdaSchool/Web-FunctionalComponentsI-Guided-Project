@@ -7,9 +7,9 @@ function Greeting({ name }) {
 }
 
 const greet = Greeting({ name: 'Luke' });
-document.querySelector('#target1').appendChild(greet);
+document.querySelector('#target4').appendChild(greet);
 // DESIRED RESULT IN THE DOM for exercise 1:
-// <div id="target1">
+// <div id="target4">
 //   <div class="greeting">
 //     Hello, Luke
 //    </div>
@@ -31,9 +31,9 @@ const button = ButtonMaker({
   label: 'Click me!',
   callback: () => console.log('You clicked!'),
 });
-document.querySelector('#target2').appendChild(button);
+document.querySelector('#target5').appendChild(button);
 // DESIRED RESULT IN THE DOM for exercise 2:
-// <div id="target2">
+// <div id="target5">
 //   <button id="theButton" class="button">Click me!</button>
 // </div>
 
@@ -64,9 +64,9 @@ const links = [
 ];
 
 const nav = NavMaker({ links });
-document.querySelector('#target3').appendChild(nav);
+document.querySelector('#target').appendChild(nav);
 // DESIRED RESULT IN THE DOM for exercise 3:
-// <div id="target3">
+// <div id="target">
 //   <nav>
 //     <a href="https://google.com">Google</a>
 //     <a href="https://wikipedia.org">Wikipedia</a>

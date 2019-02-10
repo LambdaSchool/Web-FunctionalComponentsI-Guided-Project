@@ -1,1 +1,2 @@
-import './src/01-ComponentsIntro';
+import './src/ComponentsIntro';
+import './src/ElementsIntro';
