@@ -12,7 +12,3 @@ Importing is not an objective, but needs to be covered for the students to be ab
 
 # Requirements
 We need `node` & `npm`, as well as packages `live-server` and `eslint` installed _globally_. VSCode's `eslint` extension is recommended. Command line commands are run inside the project folder. This guide uses npm but should work the same using yarn.
-
-# Steps
-## 1.
- 
