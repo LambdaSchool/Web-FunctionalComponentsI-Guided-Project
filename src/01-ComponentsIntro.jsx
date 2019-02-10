@@ -15,6 +15,8 @@ document.querySelector('#target1').appendChild(greet);
 //    </div>
 // </div>
 
+// 1B- Implement the React version.
+
 
 // 2- Implement a ButtonMaker function that takes an object
 // with a `label` prop and a `callback` prop and returns a button.
@@ -34,6 +36,8 @@ document.querySelector('#target2').appendChild(button);
 // <div id="target2">
 //   <button id="theButton" class="button">Click me!</button>
 // </div>
+
+// 2B- Implement the React version.
 
 
 // 3- Implement a NavMaker function that takes an object with a `links` prop
@@ -69,3 +73,5 @@ document.querySelector('#target3').appendChild(nav);
 //     <a href="https://bing.com">Bing</a>
 //   </nav>
 // </div>
+
+// 3B- Implement the React version.
