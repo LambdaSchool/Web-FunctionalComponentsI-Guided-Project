@@ -1,2 +1,3 @@
-import './src/ComponentsIntro';
-import './src/ElementsIntro';
+import './src/Components';
+import './src/Elements';
+import './src/Exercises';

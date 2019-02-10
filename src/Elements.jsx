@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// 1 ============================================= React.CreateElement
 
 const someElement = <div id='niceDiv' className='nice div' data-tab='6'>Hello World</div>;
 // ReactDOM.render(someElement, document.querySelector('#target1'));
