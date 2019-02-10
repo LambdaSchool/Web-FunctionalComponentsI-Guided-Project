@@ -1,6 +1,6 @@
 // Implement a NavMaker function that takes and array of links (see above)
 // and returns a nav element containing links.
-function NavMaker(linkData) {
+function NavMaker({ links }) {
   // implement
 }
 
@@ -19,7 +19,7 @@ const links = [
   },
 ];
 
-const nav = NavMaker(links);
+const nav = NavMaker({ links });
 document.querySelector('#target1').appendChild(nav);
 
 // DESIRED RESULT IN THE DOM:
