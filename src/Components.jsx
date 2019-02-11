@@ -27,7 +27,7 @@ function ReturnsString() {
 
 // Demonstrate a component that returns object
 function ReturnGreeting({ person, greet, desiredClass }) {
-  // return person; // ERROR!!!
+  // return person; // ERROR ERROR ERROR!!!
   return (
     <div className={desiredClass}>
       {`${greet} ${person.name}!`}
@@ -36,7 +36,7 @@ function ReturnGreeting({ person, greet, desiredClass }) {
 }
 
 // Demonstrate a component that returns a single child element,
-// both HTML element or another React element
+// with some nested jsx
 function ReturnsElement() {
   return (
     <div className='something'>
@@ -66,7 +66,7 @@ function ReturnsElement() {
 }
 
 // Demonstrate a component that returns an array
-function ReturnsArray() {
+function ReturnsArray({ favoriteFood }) {
   return [
     <ReturnGreeting
       person={{ name: 'Samar' }}
@@ -78,6 +78,7 @@ function ReturnsArray() {
       greet='Hello'
       desiredClass='really-kind-greet'
     />,
+    <div>I love {favoriteFood}</div>,
     'Hello',
   ];
 }
@@ -120,5 +121,5 @@ function TakesNumber({ data }) {
 // Build a component that takes a number, and returns an h1
 // saying whether you passed an odd or even number.
 function EvenOrOdd({ data }) {
-  
+
 }
