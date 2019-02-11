@@ -101,7 +101,7 @@ function ReturnsMultipleChildren() {
   );
 }
 
-// Demonstrate injecting a string through props and interpolating it
+// Demonstrate injecting an array through props and  looping through it
 function TakesData({ data }) {
   return (
     <>
@@ -114,11 +114,6 @@ function TakesData({ data }) {
 
 // Demonstrate injecting a number through props and using it
 function TakesNumber({ data }) {
-
-}
-
-// Demonstrate injecting an array through props and iterating over it
-function TakesArray({ data }) {
 
 }
 
