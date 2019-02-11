@@ -2,7 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-ReactDOM.render(<ReturnsString />, document.querySelector('#target7'));
+ReactDOM.render(
+  <ReturnsObject
+    greet='Hello'
+    person={{ name: 'John' }}
+    desiredClass='some-class'
+  />,
+  document.querySelector('#target7'),
+);
 
 
 // Demonstrate a component that returns null
@@ -23,8 +30,12 @@ function ReturnsString() {
 }
 
 // Demonstrate a component that returns object
-function ReturnsObject() {
-
+function ReturnsObject({ person, greet, desiredClass }) {
+  return (
+    <div className={desiredClass}>
+      {`${greet} ${person.name}!`}
+    </div>
+  );
 }
 
 // Demonstrate a component that returns a single child element,
