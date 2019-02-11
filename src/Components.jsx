@@ -34,7 +34,7 @@ function ReturnsObject({ person, greet, desiredClass }) {
   // return person; // ERROR!!!
   return (
     <div className={desiredClass}>
-      {`${greet} ${person}!`}
+      {`${greet} ${person.name}!`}
     </div>
   );
 }
