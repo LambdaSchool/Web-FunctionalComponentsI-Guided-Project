@@ -21,7 +21,7 @@ function ReturnsNull({ name }) {
 function ReturnsEmptyString({ number }) {
   return number > 10
     ? 'Yay'
-    : undefined;
+    : '';
 }
 
 // Demonstrate a component that returns a string
