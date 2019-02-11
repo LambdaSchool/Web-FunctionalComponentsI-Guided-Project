@@ -2,22 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-ReactDOM.render(<ReturnsNull />, document.querySelector('#target7'));
+ReactDOM.render(<ReturnsString />, document.querySelector('#target7'));
 
 
 // Demonstrate a component that returns null
-function ReturnsNull() {
+function ReturnsNull({ name }) {
   return null;
 }
 
 // Demonstrate a component that returns empty string
-function ReturnsEmptyString() {
-
+function ReturnsEmptyString({ number }) {
+  return number > 10
+    ? 'Yay'
+    : undefined;
 }
 
 // Demonstrate a component that returns a string
 function ReturnsString() {
-
+  return 'Hello World';
 }
 
 // Demonstrate a component that returns object

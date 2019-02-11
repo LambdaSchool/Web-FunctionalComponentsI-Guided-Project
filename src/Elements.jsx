@@ -9,17 +9,17 @@ wantToAvoid.classList.add('nice');
 wantToAvoid.classList.add('div');
 wantToAvoid.innerText = 'Hello World';
 
-// const someElement = <div id='niceDiv' className='nice div' data-tab='6'>Hello there</div>;
+const someElement = <div id='niceDiv' className='nice div' data-tab='6'>Hello there</div>;
 // re-write someElement using React.CreateElement
-const someElement = React.createElement(
-  'div', // can be a React Component
-  {
-    className: 'nice div',
-    id: 'niceDiv',
-    'data-tab': '6',
-  },
-  'Hello there from React.createElement', // can be an array of children
-);
+// const someElement = React.createElement(
+//   'div', // can be a React Component
+//   {
+//     className: 'nice div',
+//     id: 'niceDiv',
+//     'data-tab': '6',
+//   },
+//   'Hello there from React.createElement', // can be an array of children
+// );
 // ReactDOM.render(someElement, document.querySelector('#target1'));
 
 
