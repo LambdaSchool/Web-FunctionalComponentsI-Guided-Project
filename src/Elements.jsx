@@ -2,6 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
+const wantToAvoid = document.createElement('div');
+wantToAvoid.id = 'niceDiv';
+wantToAvoid.dataset.tab = '6';
+wantToAvoid.classList.add('nice');
+wantToAvoid.classList.add('div');
+wantToAvoid.innerText = 'Hello World';
+
 const someElement = <div id='niceDiv' className='nice div' data-tab='6'>Hello World</div>;
 // ReactDOM.render(someElement, document.querySelector('#target1'));
 // re-write someElement using React.CreateElement
