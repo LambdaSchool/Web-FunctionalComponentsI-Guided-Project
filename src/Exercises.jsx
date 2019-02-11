@@ -1,4 +1,4 @@
-// 1- Implement a Greeting function that takes an object with a `name` prop
+// 1A- Implement a Greeting function that takes an object with a `name` prop
 // and returns a div element containing a greeting.
 function Greeting({ name }) {
   const greeting = document.createElement('div');
@@ -18,7 +18,7 @@ document.querySelector('#target4').appendChild(greet);
 // 1B- Implement the React version.
 
 
-// 2- Implement a ButtonMaker function that takes an object
+// 2A- Implement a ButtonMaker function that takes an object
 // with a `label` prop and a `callback` prop and returns a button.
 // Clicking on this button should execute the callback.
 function ButtonMaker({ label, callback }) {
@@ -40,7 +40,7 @@ document.querySelector('#target5').appendChild(button);
 // 2B- Implement the React version.
 
 
-// 3- Implement a NavMaker function that takes an object with a `links` prop
+// 3A- Implement a NavMaker function that takes an object with a `links` prop
 // and returns a nav element containing clickable links.
 function NavMaker({ links }) {
   const nav = document.createElement('nav');

@@ -25,7 +25,8 @@ function ReturnsObject() {
 
 }
 
-// Demonstrate a component that returns a single child element
+// Demonstrate a component that returns a single child element,
+// both HTML element or another React element
 function ReturnsElement() {
 
 }
