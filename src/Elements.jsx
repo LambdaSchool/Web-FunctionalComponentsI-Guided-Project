@@ -9,7 +9,18 @@ wantToAvoid.classList.add('nice');
 wantToAvoid.classList.add('div');
 wantToAvoid.innerText = 'Hello World';
 
-const someElement = <div id='niceDiv' className='nice div' data-tab='6'></div>;
+// const someElement = <div id='niceDiv' className='nice div' data-tab='6'>Hello there</div>;
+
+const someElement = React.createElement(
+  'div',
+  {
+    className: 'nice div',
+    id: 'niceDiv',
+    'data-tab': '6',
+  },
+  'Hello there from React.createElement',
+);
+
 ReactDOM.render(someElement, document.querySelector('#target1'));
 // re-write someElement using React.CreateElement
 
