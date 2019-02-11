@@ -31,9 +31,10 @@ function ReturnsString() {
 
 // Demonstrate a component that returns object
 function ReturnsObject({ person, greet, desiredClass }) {
+  // return person; // ERROR!!!
   return (
     <div className={desiredClass}>
-      {`${greet} ${person.name}!`}
+      {`${greet} ${person}!`}
     </div>
   );
 }
