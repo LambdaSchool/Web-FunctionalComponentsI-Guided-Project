@@ -10,6 +10,7 @@ wantToAvoid.classList.add('div');
 wantToAvoid.innerText = 'Hello World';
 
 // const someElement = <div id='niceDiv' className='nice div' data-tab='6'>Hello there</div>;
+// re-write someElement using React.CreateElement
 const someElement = React.createElement(
   'div', // can be a React Component
   {
@@ -19,16 +20,28 @@ const someElement = React.createElement(
   },
   'Hello there from React.createElement', // can be an array of children
 );
+// ReactDOM.render(someElement, document.querySelector('#target1'));
 
-ReactDOM.render(someElement, document.querySelector('#target1'));
+
+// const anotherElement = <div aria-label='screen reader label'>Something interesting</div>;
+const anotherElement = React.createElement(
+  'div',
+  {
+    'aria-reader': 'screen reader label',
+  },
+  'Something Interseting',
+);
+// ReactDOM.render(anotherElement, document.querySelector('#target2'));
 // re-write someElement using React.CreateElement
 
 
-const anotherElement = <div aria-label='screen reader label'>Something interesting</div>;
-ReactDOM.render(anotherElement, document.querySelector('#target2'));
-// re-write someElement using React.CreateElement
-
-
-const yetAnother = <button onClick={() => console.log('you clicked!')}>Click me!</button>;
-ReactDOM.render(yetAnother, document.querySelector('#target3'));
+// const yetAnother = <button onClick={() => console.log('you clicked!')}>Click me!</button>;
+const yetAnother = React.createElement(
+  'button',
+  {
+    onClick: () => console.log('you clicked!'),
+  },
+  'Click me!',
+);
+// ReactDOM.render(yetAnother, document.querySelector('#target3'));
 // re-write someElement using React.CreateElement
